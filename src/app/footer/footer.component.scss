@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+:host {
+    position: fixed;
+    bottom: 0;
+    height: 1.2rem;
+    left: 0;
+    background-color: $primary;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+    color: $light;
+    * {
+        font-size: 0.8rem;
+    }
+    padding-right: 0.5rem;
+}

@@ -20,22 +20,37 @@
     .container--brand {
         margin: 0.2rem;
         color: $light;
-
-    }
-    .container--nav {
-        transition: 1s 3sn;
-        display: flex;
         flex-grow: 1;
+        display:flex;
+        .underscore {
+            flex-grow: 1;
+            border-bottom: 2px solid $light;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container--brand {
+            display: none;
+        }
+      }
+
+    .container--nav {
+        // transition: 1s 3sn;
+        display: flex;
+        
         align-items: center;
-        justify-content: flex-start;
+        // justify-content: flex-start;
+        justify-content: flex-end;
         margin-right: 0.5rem;
-        > div {
+        font-size: 0.5rem;
+        .container--nav--item {
             margin: 0.2rem;
             padding: 0.2rem;
             display: flex;
+            font-size: 0.5rem;
             flex-direction: column;
             align-items: center;
-            > div{
+            div {
                 font-size: 0.5rem;
             }
  

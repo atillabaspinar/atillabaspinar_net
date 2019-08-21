@@ -11,13 +11,13 @@ export class HeaderComponent implements OnInit {
   constructor(private uiService: UiEventsService) { }
 
   ngOnInit() {
-    setTimeout(() => {
-      const nav  = document.getElementsByClassName('container--nav ').item(0);
-      if (nav) {
-        (nav as HTMLElement).style.justifyContent = 'flex-end';
+    // setTimeout(() => {
+    //   const nav  = document.getElementsByClassName('container--nav ').item(0);
+    //   if (nav) {
+    //     (nav as HTMLElement).style.justifyContent = 'flex-end';
 
-        }
-      }, 1000);
+    //     }
+    //   }, 1000);
   }
 
   onButtonClick() {

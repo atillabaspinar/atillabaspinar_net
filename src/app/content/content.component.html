@@ -1,0 +1,27 @@
+<div class="container-fluid p-4">
+    <div class="row">
+        <div class="col-6">
+                <p-panel [header]="title" [toggleable]="true">
+                        <p-listbox *ngIf="title === 'css'" class="ui-fluid" [options]="css" [(ngModel)]="selectedCities"></p-listbox>
+                        <p-listbox *ngIf="title === 'js'" class="ui-fluid" [options]="js" [(ngModel)]="selectedCities"></p-listbox>
+                        <p-listbox *ngIf="title === 'angular'" class="ui-fluid" [options]="angular" [(ngModel)]="selectedCities"></p-listbox>
+                        <p-listbox *ngIf="title === 'svg'" class="ui-fluid" [options]="svg" [(ngModel)]="selectedCities"></p-listbox>
+                </p-panel>
+            
+        </div>
+    </div>
+</div>
+
+<!-- <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <div class="form-group">
+            <input name="fullName" #fullName="ngModel" [(ngModel)]="userService.formData.fullName" class="form-control" placeholder="Full name" required>
+            <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">This field is required.</div>
+    </div>
+    <div class="form-group">
+            <input name="email" #email="ngModel" [(ngModel)]="userService.formData.email" class="form-control" placeholder="Email" required>
+            <div *ngIf="email.invalid && email.touched" class="validation-error">This field is required.</div>
+    </div>
+    <div class="form-group">
+            <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">SUBMIT</button>
+          </div>   
+</form> -->

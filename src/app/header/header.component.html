@@ -3,29 +3,37 @@
         <a (click)="onButtonClick()"> <i class="fas fa-bars fa-lg"></i></a>
     </div>
     <div class="container--brand">
-        Atilla @Code
+        <div>AtillaBaspinar</div>
+        <div class="underscore"></div>
+        <div>Net</div>        
     </div>
     <div class="container--nav">
         <div class="container--nav--item">
-            <a href="">
+            <a [routerLink]="['/content/js']">
                 <i class="fab fa-js-square fa-lg"></i>
             </a>
             <div>JavaScript</div>
         </div>
         <div class="container--nav--item">
-            <a href="">
+                <a [routerLink]="['/content/angular']">
+                    <i class="fab fa-angular fa-lg"></i>
+                </a>
+                <div>Angular</div>
+            </div>        
+        <div class="container--nav--item">
+            <a [routerLink]="['/content/css']">
                 <i class="fab fa-css3-alt fa-lg"></i>
             </a>
             <div>CSS</div>
         </div>
         <div class="container--nav--item mr-4">
-            <a href="">
-                <i class="fab fa-angular fa-lg"></i>
-            </a>
-            <div>Angular</div>
-        </div>
+                <a [routerLink]="['/content/svg']">
+                    <i class="fas fa-draw-polygon fa-lg"></i>
+                </a>
+                <div>SVG</div>
+            </div>
         <div class="container--nav--item">
-            <a href="">
+            <a [routerLink]="['/content/about']">
                     <i class="far fa-question-circle"></i>
             </a>
             <div>About</div>

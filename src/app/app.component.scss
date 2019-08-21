@@ -1,4 +1,17 @@
+@import '../common.scss';
+
 :host {
     background-color: rgb(230, 217, 217);
-    color: rgb(24, 24, 24)
+    color: rgb(24, 24, 24);
+
+    app-left-menu {
+        width: $menu-width;
+        z-index: 1;
+        position: fixed;
+        top: $header__height;
+        bottom: 0;
+        left: 0;    
+    }
+
+
 }

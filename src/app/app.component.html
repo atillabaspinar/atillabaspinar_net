@@ -1,3 +1,6 @@
 <app-header></app-header>
+
 <app-left-menu *ngIf="uiService.menuButtonState | async"></app-left-menu>
-here will be text
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
