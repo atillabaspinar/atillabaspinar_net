@@ -1,0 +1,45 @@
+@import '../../styles.scss';
+@import '../../common.scss';
+.ab-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $header__height;
+    color: $warning;
+    a {
+        color: $warning;
+        :hover {
+            color: $success;
+        }
+    }
+    .container--button {
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    .container--brand {
+        margin: 0.2rem;
+        color: $light;
+
+    }
+    .container--nav {
+        transition: 1s 3sn;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 0.5rem;
+        > div {
+            margin: 0.2rem;
+            padding: 0.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            > div{
+                font-size: 0.5rem;
+            }
+ 
+        }
+    }
+    
+}

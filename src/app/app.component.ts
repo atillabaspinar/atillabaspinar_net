@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UiEventsService } from './ui-events.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'atillabaspinar';
+
+  constructor(private uiService: UiEventsService) {
+   
+  }
 }

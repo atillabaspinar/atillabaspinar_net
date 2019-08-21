@@ -27,9 +27,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/Quicksand/Quicksand-Regular.ttf?family=Quicksand&display=swap"
+             
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
+             
+            ]
           },
           "configurations": {
             "production": {
