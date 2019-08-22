@@ -8,12 +8,20 @@
     align-items: center;
     height: 100%;
     * { 
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
-    a {        
+    a { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;       
         color: $danger;
+        margin-bottom: 1rem;
         :hover {
             color: $warning;
+        }
+        svg {
+            font-size: 2rem;
         }
     }
     > div {
